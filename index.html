@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- Menentukan bahwa ini adalah dokumen HTML5 -->
+<html lang="en"> <!-- Bahasa utama halaman ini adalah Inggris -->
+
+<head>
+  <meta charset="UTF-8" /> <!-- Set karakter encoding ke UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Responsif untuk berbagai ukuran layar -->
+  <title>WhyBitcoin</title> <!-- Judul halaman yang tampil di tab browser -->
+  <link rel="stylesheet" href="style.css" /> <!-- Menghubungkan file CSS lokal -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" /> <!-- Memuat SweetAlert2 CSS dari CDN -->
+</head>
+
+<body>
+  <header> <!--bagian atas halaman-->
+    <h1 class="title">Bitcoin</h1> <!-- Judul utama halaman -->
+    <p class="subtitle">A simple page to help you understanding Bitcoin</p> <!-- Deskripsi singkat halaman -->
+  </header>
+
+  <main> <!--bagian konten utama-->
+    <!-- What is Bitcoin -->
+    <section class="section section-bitcoin"> <!-- Bagian untuk menjelaskan apa itu Bitcoin -->
+      <h2 class="point">What's Bitcoin?</h2> <!-- Subjudul bagian -->
+      <p class="teks">Bitcoin is a digital currency that allows people to send or receive money over the internet. It operates 
+        without a central authority like a bank or government. Transactions are verified by a network of computers (called nodes) 
+        and recorded in a public ledger called the blockchain.</p> <!-- Penjelasan teks tentang Bitcoin -->
+    </section>
+
+    <!-- Video Explanation -->
+    <section class="section"> <!-- Bagian berisi video YouTube -->
+      <h2 class="point">Bitcoin Explained</h2> <!-- Subjudul -->
+      <div class="video-container"> <!-- Kontainer video untuk styling -->
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/s4g1XFU8Gto" title="Bitcoin explained and made simple" frameborder="0" allowfullscreen></iframe> <!-- Video YouTube tentang Bitcoin -->
+      </div>
+      <p class="subtitle">Bitcoin (BTC) is a cryptocurrency (a virtual currency) designed to act as money and a form of 
+        payment outside the control of any one person, group, or entity. This removes the need for trusted third-party 
+        involvement (e.g., a mint or bank) in financial transactions.</p> <!-- Penjelasan tambahan -->
+    </section>
+
+    <!-- How Cryptocurrency Works -->
+    <section class="section"> <!-- Bagian menjelaskan cara kerja kripto -->
+      <h2 class="point">How Cryptocurrency Works</h2> <!-- Subjudul -->
+      <div class="video-container"> <!-- Kontainer video lokal -->
+        <video id="bitcoinVideo" width="600" height="400" controls> <!-- Video lokal dengan kontrol -->
+          <source src="How_Cryptocurrency_Works.mp4" type="video/mp4" /> <!-- Sumber video -->
+          Your browser does not support the video tag. <!-- Pesan fallback jika browser tidak mendukung video -->
+        </video>
+      </div>
+      <p class="subtitle">Cryptocurrencies are digital or virtual currencies secured by cryptography and operate on 
+        decentralized networks, typically using blockchain technology. They are not issued by any central bank or government 
+        and are not tangible physical assets. Instead, they exist as digital entries on a public ledger, allowing peer-to-peer 
+        transactions without a middleman.</p> <!-- Penjelasan tentang cara kerja kripto -->
+    </section>
+
+    <!-- Audio Explanation -->
+    <section class="section"> <!-- Bagian berisi penjelasan dalam bentuk audio -->
+      <h2 class="point">Listen to Bitcoin Explained</h2> <!-- Subjudul -->
+      <div class="video-container"> <!-- Kontainer audio -->
+        <audio id="bitcoinAudio" controls> <!-- Pemutar audio dengan kontrol -->
+          <source src="bitcoin_audio.mp3" type="audio/mpeg" /> <!-- Sumber file audio -->
+          Your browser does not support the audio element. <!-- Pesan fallback jika browser tidak mendukung audio -->
+        </audio>
+      </div>
+      <p class="subtitle">This is an audio version of Bitcoin's basic explanation.</p> <!-- Penjelasan tambahan -->
+    </section>
+
+    <!-- Reference -->
+    <section class="section"> <!-- Bagian referensi tambahan -->
+      <h2>Want to learn more?</h2> <!-- Judul bagian -->
+      <p>You can learn in <a href="https://en.wikipedia.org/wiki/Bitcoin" target="_blank">Wikipedia</a> for more information!</p> <!-- Link ke Wikipedia (buka tab baru) -->
+      <p>Or in <a href="https://www.investopedia.com/terms/b/bitcoin.asp#:~:text=Bitcoin%20(BTC)%20is%20a%20cryptocurrency,or%20bank)%20in%20financial%20transactions." target="_blank">Investopedia</a> for another referance.</p> <!-- Link ke Investopedia (buka tab baru) -->
+    </section>
+  </main>
+
+  <footer>  
+    <p>Irfansyah_223_E :)</p> <!-- Footer nama atau tanda identitas -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Script SweetAlert2 dari CDN -->
+  <script src="script.js"></script> <!-- Menghubungkan file JavaScript lokal -->
+</body>
+</html>
+
+<!--section = bagian konten menjadi bagian bagian, seperti topik topik yang berbeda-->
+<!--div = elemen wadah umum (container) yang tidak punya arti khusus. Sering dipakai untuk mengelompokkan elemen lain atau memberi style/layout dengan CSS-->

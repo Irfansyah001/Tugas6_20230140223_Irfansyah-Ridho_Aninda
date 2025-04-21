@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif; /* Mengatur jenis font teks */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+    background-image: url('ImageBitcoin.png'); /* Gambar latar belakang halaman */
+    background-size: cover; /* Gambar menutupi seluruh area */
+    background-position: center; /* Posisi gambar di tengah */
+    background-repeat: no-repeat; /* Gambar tidak diulang */
+    background-attachment: fixed; /* Gambar latar tetap saat di-scroll */
+    color: #333; /* Warna teks utama */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9); /* Warna latar hitam semi-transparan */
+    color: rgba(255, 255, 255, 0.6); /* Warna teks putih agak transparan */
+    text-align: center; /* Teks di tengah */
+    padding: 20em 5em; /* Ruang dalam: atas/bawah 20em, kiri/kanan 5em */
+}
+
+.title {
+    margin: 0; /* Tidak ada margin */
+    font-size: 2.5em; /* Ukuran huruf besar */
+}
+
+.subtitle {
+    margin-top: 0.5em; /* Jarak atas 0.5em dari elemen sebelumnya */
+    font-size: 1.2em; /* Ukuran teks sedang */
+}
+
+main {
+    padding: 20px; /* Ruang dalam 20px */
+    max-width: 900px; /* Lebar maksimal konten utama */
+    margin: auto; /* Posisi tengah secara horizontal */
+}
+
+.section {
+    margin-bottom: 40px; /* Jarak antar bagian bawah */
+    background: rgb(0, 0, 0); /* Warna latar hitam */
+    padding: 20px; /* Ruang dalam */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 2px 8px rgba(0,0,0,1); /* Bayangan kotak */
+    color: white; /* Warna teks putih */
+}
+
+.section-bitcoin {
+    background-image: url('bitcoinOne.jpg'); /* Gambar latar bagian ini */
+    background-size: cover; /* Gambar menutupi seluruh bagian */
+    background-position: center; /* Gambar di tengah */
+    background-repeat: no-repeat; /* Gambar tidak diulang */
+    color: white; /* Warna teks putih */
+    position: relative; /* Posisi relatif untuk layering */
+}
+
+.section-bitcoin::before {
+    content: ""; /* Membuat elemen kosong sebelum isi */
+    position: absolute; /* Posisi absolut di atas section */
+    top: 0; left: 0; right: 0; bottom: 0; /* Menutupi seluruh bagian */
+    background-color: rgba(0, 0, 0, 0.5); /* Latar hitam transparan */
+    z-index: 0; /* Diletakkan paling belakang */
+    border-radius: 10px; /* Sudut membulat */
+}
+
+.section-bitcoin h2,
+.section-bitcoin p {
+    position: relative; /* Teks di atas overlay (layer atas) */
+    z-index: 1; /* Teks tampil di atas elemen ::before */
+}
+
+.video-container {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Tengah secara horizontal */
+    align-items: center; /* Tengah secara vertikal */
+    flex-direction: column; /* Elemen ditumpuk vertikal */
+    margin: 0 auto; /* Tengah secara horizontal */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Warna latar hitam transparan */
+    color: #ffffff; /* Warna teks putih */
+    text-align: center; /* Teks di tengah */
+    padding: 1em; /* Ruang dalam 1em */
+}
+
+p.teks {
+  font-weight: bold;  /* Teks jadi tebal khusus untuk paragraf dengan class "teks" */
+}
